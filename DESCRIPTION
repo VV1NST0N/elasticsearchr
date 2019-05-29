@@ -15,7 +15,7 @@ BugReports: https://github.com/alexioannides/elasticsearchr/issues
 LazyData: TRUE
 Imports:
     httr,
-    jsonlite
+    jsonlite,
     dplyr
 Suggests:
     knitr,
