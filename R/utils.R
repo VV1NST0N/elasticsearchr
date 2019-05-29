@@ -371,6 +371,7 @@ from_size_search <- function(rescource, api_call_payload) {
 #' # 5          5.2         3.5          1.5         0.2  setosa
 #' # 6          5.2         3.4          1.4         0.2  setosa
 #' }
+require("plyr")
 scroll_search <- function(rescource, api_call_payload, extract_function = extract_query_results) {
   scroll_search_url <- paste0(rescource$cluster_url, "/_search/scroll")
   scroll_results <- list()
