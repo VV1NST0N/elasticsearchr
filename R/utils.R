@@ -401,7 +401,7 @@ scroll_search <- function(rescource, api_call_payload, extract_function = extrac
     }
   }
 
-  as.data.frame(bind_rows(scroll_results), stringsAsFactors = FALSE)
+  do.call(rbind.fill, scroll_results)
 }
 
 
